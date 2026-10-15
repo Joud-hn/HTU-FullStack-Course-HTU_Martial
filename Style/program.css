@@ -1,0 +1,261 @@
+
+
+body
+{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+main section
+{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+#Hero
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.program h1
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+.program p
+{
+    margin: 0 0 18px;
+    color: #ddd;
+    max-width: 700px;
+}
+.actions
+{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.mbtn, .tbtn
+{
+    display: inline-block;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.mbtn{
+    background-color: #c1121f;
+    color: white;
+
+}
+.tbtn{
+    background-color: transparent;
+    border: 2px solid #c1121f;
+    color: white;
+}
+.mbtn:hover, .tbtn:hover
+{
+opacity: 0.9;
+}
+#filters div{
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+#filters button
+{
+    background: #3e3939;
+    color: white;
+    border: 1px solid #fff;
+    padding: 10px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+#filters button:hover
+{
+    border-color: #c1121f;
+    color: #c1121f;
+}
+#programCard, .membershipContainer
+{   display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.programCard
+{
+    background-color: #3e3939;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    padding: 18px;
+    transition: 0.2s;
+}
+.programCard:hover
+{
+    border-color: #c1121f;
+}
+
+.programCard h3
+{
+    margin: 0 0 10px;
+}
+.programCard p
+{
+    margin: 0 0 12px;
+    color: #e5e5e5;
+}
+.programList
+{
+    margin: 0 0 12px;
+    padding-left: 18px;
+}
+.programCard a{
+    display: inline-block;
+    background-color: #c1121f;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.programCard a:hover
+{
+    opacity: 0.9;
+}
+.card-details{
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+   
+}
+.card-details.show{
+    max-height: 300px;
+    opacity: 1;
+}
+
+.membershipCard
+{
+    background-color: #3e3939;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    padding: 18px;
+    transition: 0.2s;
+}
+.membershipCard:hover
+{
+    border-color: #c1121f;
+}
+.membershipPrice{
+    font-size: 28px;
+    font-weight: 800;
+    margin: 10px 0 12px;
+}
+.membershipPrice span{
+    font-size: 14px;
+    font-weight: normal;
+    color: #ddd;
+}
+.membershipCard ol{
+    margin: 0 0 12px;
+    padding-left: 20px;
+}
+.details-btn{
+    display: inline-block;
+    background-color: #c1121f;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+ .details-btn:hover{
+    opacity: 0.9;
+}
+.membershipCard a{
+    display: inline-block;
+    background-color: #c1121f;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.membershipCard a:hover{
+    opacity: 0.9;
+}
+#timetable .table{
+    width: 100%;
+    overflow-x: auto;
+}
+#timetable table{
+    width: 100%;
+    min-width: 900px;
+
+}
+#timetable th, #timetable td{
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+#timetable thead th{
+    background-color: #1b1b1b;
+}
+#Dprogram{
+    background-color: #111;
+    border: 2px solid #ffff;
+    border-radius: 4px;
+    text-align: center;
+}
+#Dprogram h2{
+    margin-top: 0;
+}
+#Dprogram div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#Dprogram a{
+    display: inline-block;
+    background-color: #c1121f;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+#Dprogram a:hover{
+    opacity: 0.9;
+}
+
+#programFooter{
+    text-align: center;
+    padding: 20px;
+    color: #ddd;
+    border-top: 1px solid #333;
+}
+@media(max-width:900px){
+    #programCard, .membershipContainer{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    
+   
+}
+@media( max-width:600px){
+
+    
+    #programCard,.membershipContainer,#Dprogram{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    #Dprogram div{
+        flex-direction: column;
+        align-items: center;
+    }
+}
